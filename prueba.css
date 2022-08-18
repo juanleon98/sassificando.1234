@@ -1,0 +1,471 @@
+.border {
+    border: 05px solid black;
+}
+
+#grilla {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 80px 280px 125px 200px;
+    grid-template-areas: 
+    " cabeza1 cabeza1 cabeza1"
+    "nav1 nav1 nav1"
+    "section2 section2 section2"
+    "aside1 aside1 aside1"
+    "pata1 pata1 pata1";
+    row-gap: 05px;
+    height: 100vh;
+
+}
+
+
+header#cabeza1 {
+    grid-area: cabeza1;
+    background-image: linear-gradient( to right, black , rgb(9, 225, 45) );
+}
+
+nav#nav1 {
+    grid-area: nav1;
+    background-image: linear-gradient( to right, black , rgb(9, 225, 45) );
+}
+section#section2 {
+    grid-area: section2;
+    background-image: linear-gradient( to right, black , rgb(9, 225, 45) );
+}
+aside#aside1 {
+    grid-area: aside1;
+    background-image: linear-gradient( to right, black , rgb(9, 225, 45) );
+}
+footer#pata1 {
+    grid-area: pata1;
+    background-image: linear-gradient( to right, black , rgb(9, 225, 45) );
+
+    /* header */
+}
+.header__nav1__contenedor {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 05px;
+
+}
+
+.header__nav__img1  {
+
+    width: 80px;
+    height: 80px;
+    border-radius: 45%;
+}
+
+.header__nav__h1 {
+
+    color: rgb(3, 3, 3);
+    font-size: 28px;
+    font-family: cursive ;
+    font-style: italic;
+    color: white;
+}   /* header */
+
+   /* navegacion */
+
+.nav1__contenedor ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+
+.nav1__contenedor ul li {
+background-color: rgb(235, 70, 70);
+margin-right: 10px;
+border-radius: 18%;
+padding-left: 03%;
+border: 02px solid white;
+}
+
+.nav1__contenedor ul li a {
+    color: white;
+    font-weight: bold;
+}
+         /* navegacion */
+
+        /* section index*/
+
+#section2 { 
+    display: flex;
+    flex-direction: row;
+}
+.section__div1 img {
+    border-radius: 50%;
+    height: 200px;
+    padding-top: 35px;
+}
+
+.section__div2  h3 {
+    color: white;
+    padding-top: 25px;
+
+}
+.section__div2  p {
+    color: white;
+    font-weight: bold;
+    
+}  
+
+ /* aside del index */ 
+
+ #aside1 p {
+    color: white;
+    font-size: 18px;
+    margin: 04px;
+ }
+/* aside del index/
+ 
+    
+/*  footer */
+
+
+#footer__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+    
+#logotype {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 60px;
+    ;
+}
+
+#logotype h2 {
+font-size: 17px;
+color: white;
+}
+
+
+.pages {
+
+    width: 30px;
+    height: 30px;
+    
+    border-radius: 50%;
+    padding-bottom: 25px;
+
+    
+}
+
+.footer__nav2 {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    padding: 15px;
+}
+
+.footer__div2__downn {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+}
+
+.footer__redes p { 
+
+    font-weight: bold;
+    color: white;
+}
+
+#main__footer {
+
+    display: flex;
+    flex-direction: row;
+}
+
+/*footer*/
+
+/*media queries desktop index */
+
+@media screen and (min-width: 1200px)  {
+    #grilla   {
+   
+       grid-template-columns:200px 500px ;
+       grid-template-rows: 100px 160px 100px 70pxpx;
+       grid-template-areas: 
+       " cabeza1 cabeza1 cabeza1"
+       "nav1 section2 section2"
+       "nav1 section2 section2"
+       "nav1 aside1 aside1"
+       "pata1 pata1 pata1";
+     }
+     .nav1__contenedor ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items:stretch;
+     }
+     .nav1__contenedor ul li {
+        margin-bottom: 50px;
+     }
+     .footer__redes { 
+        display: flex;
+        flex-direction: column;
+     }
+
+    }
+
+    /*media queries desktop index*/
+
+
+
+/*  contacto contacto contacto ++++ work with us*/
+
+
+#grilla2 {
+    display: grid;
+    grid-template-columns: 500px;
+    grid-template-rows: 100px 80px 550px 200px;
+    grid-template-areas: 
+    " cabeza1 cabeza1 cabeza1"
+    "nav1 nav1 nav1"
+    "section__contacto section__contacto section__contacto"
+    "pata1 pata1 pata1";
+    row-gap: 05px;
+    height: 100vh;
+
+}
+
+section#section__contacto {
+    grid-area: section__contacto;
+    background-image: linear-gradient( to right, black , rgb(9, 225, 45) );
+}
+
+.section__main__contacto {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.section__main__contacto h3 {
+    color: white;
+    padding-top: 70px;
+}
+
+.section__main__contacto form { 
+    color:white;
+    font-size: 18px;
+}
+.section__main__workwithus { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section__main__workwithus p { 
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+@media screen and (min-width: 1200px)  {
+    #grilla2   {
+   
+       grid-template-columns:200px 500px ;
+       grid-template-rows: 100px 250px 150px 180px;
+       grid-template-areas: 
+       " cabeza1 cabeza1 cabeza1"
+       "nav1 section__contacto section__contacto"
+       "nav1 section__contacto section__contacto"
+       "pata1 pata1 pata1";
+     }
+     .nav1__contenedor ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items:stretch;
+     }
+     .nav1__contenedor ul li {
+        margin-bottom: 50px;
+     }
+
+     .section__main__workwithus { 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .footer__redes { 
+        display: flex;
+        flex-direction: column;
+     }
+
+
+    }
+
+/*  contacto contacto contacto + wok with us*/
+
+/* blog blog blog +++ nosotros  nosotros nosotros */
+
+#grilla3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 80px 350px 260px 260px 200px;
+    grid-template-areas: 
+    " cabeza1 cabeza1 cabeza1"
+    "nav1 nav1 nav1"
+   "blogg__div1 blogg__div1 blogg__div1"
+   "blogg__div2 blogg__div2 blogg__div2"
+   "blogg__div3 blogg__div3 blogg__div3"
+    "pata1 pata1 pata1";
+    row-gap: 05px;
+    height: 100vh;
+
+}
+
+div#blogg__div1 {
+
+    grid-area: blogg__div1;
+    background-image: linear-gradient( to right, black , rgb(9, 225, 45) );
+}
+
+div#blogg__div2 {
+
+    grid-area: blogg__div2;
+    background-image: linear-gradient( to right, black , rgb(9, 225, 45) );
+}
+div#blogg__div3 {
+
+    grid-area: blogg__div3;
+    background-image: linear-gradient( to right, black , rgb(9, 225, 45) );
+}
+.blogg__div1__p1 { 
+    color: white;
+    font-weight: bold;
+}
+h3 {
+    color: white;
+    font-weight: bolder;
+}
+h2 {
+    color: white;
+    font-weight: bolder;
+}
+
+/*media queries desktop blog +++ nosotros */
+
+@media screen and (min-width: 1200px)  {
+    #grilla3   {
+   
+       grid-template-columns:200px 500px ;
+       grid-template-rows: 100px 190px 150px 150px;
+       grid-template-areas: 
+       " cabeza1 cabeza1 cabeza1"
+       "nav1 blogg__div1 blogg__div1"
+       "nav1 blogg__div2 blogg__div2"
+       "nav1 blogg__div3 blogg__div3"
+       "pata1 pata1 pata1";
+     }
+     .nav1__contenedor ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items:stretch;
+     }
+     .nav1__contenedor ul li {
+        margin-bottom: 50px;
+     }
+
+    }
+/*media queries desktop blog +++ nosotros */
+
+/* blog blog blog +++ nosotros  nosotros nosotros */
+
+/* nuestro trabajo nuestro trabajo nuestro trabajo*/
+
+#grilla4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 80px 430px 220px 200px;
+    grid-template-areas: 
+    " cabeza1 cabeza1 cabeza1"
+    "nav1 nav1 nav1"
+   "ourwork__div1 ourwork__div1 ourwork__div1"
+   "ourwork__div2 ourwork__div2 ourwork__div2"
+   "pata1 pata1 pata1";
+    row-gap: 05px;
+    height: 100vh;
+
+}
+
+div#ourwork__div1 {
+    grid-area: ourwork__div1;
+    background-image: linear-gradient( to right, black , rgb(9, 225, 45) );
+}
+
+div#ourwork__div2 {
+    grid-area: ourwork__div2;
+    background-image: linear-gradient( to right, black , rgb(9, 225, 45) );
+}
+
+.imagen22 { 
+    width: 150px;
+    height: 150px;
+  
+    padding-left: 130px;
+
+}
+
+.imagen3 { 
+    width: 150px;
+    height: 150px;
+   
+    padding-left: 130px;
+    
+}
+
+.our__section_nav_p { 
+    color: white;
+    font-weight: bold;
+}
+.our__section_nav_p2 { 
+    color: white;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1200px)  {
+    #grilla4   {
+   
+       grid-template-columns:200px 500px ;
+       grid-template-rows: 100px 300px 300px 180px;
+       grid-template-areas: 
+       " cabeza1 cabeza1 cabeza1"
+       "nav1 ourwork__div1 ourwork__div1"
+       "nav1 ourwork__div2 ourwork__div2"
+       "pata1 pata1 pata1";
+     }
+     .nav1__contenedor ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+     
+     }
+     .nav1__contenedor ul li {
+        margin-bottom: 50px;
+
+     }
+     .footer__redes { 
+        display: flex;
+        flex-direction: column;
+     }
+
+
+    
+    }
+
+    
+
+/* nuestro trabajo nuestro trabajo nuestro trabajo*/
+
+
+
+
