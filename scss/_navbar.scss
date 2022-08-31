@@ -1,0 +1,26 @@
+
+   /* navegacion */
+
+.nav1__contenedor  {
+   
+      ul {
+         list-style-type: none;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+          li {
+                background-color: $color-nav;
+                margin-right: 10px;
+                border-radius: 18%;
+                padding-left: 03%;
+                border: 02px solid white;
+                a {
+                     color: rgb(151, 125, 125);
+                      font-weight: bold;
+                      font-family: 'Times New Roman', Times, serif;
+                      
+                   }
+             }
+         }
+}
+         /* navegacion */

@@ -1,0 +1,21 @@
+#section2 { 
+    display: flex;
+    flex-direction: row;
+    .section__div1 img {
+        border-radius: 50%;
+        height: 200px;
+        padding-top: 35px;
+    }
+    
+    .section__div2  h3 {
+        color: white;
+        padding-top: 25px;
+    
+    }
+    .section__div2  p {
+        color: white;
+        font-weight: bold;
+        
+    } 
+}
+ 

@@ -1,0 +1,32 @@
+#grilla {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 80px 280px 125px 200px;
+    grid-template-areas: " cabeza1 cabeza1 cabeza1" "nav1 nav1 nav1" "section2 section2 section2" "aside1 aside1 aside1" "pata1 pata1 pata1";
+    row-gap: 5px;
+    height: 100vh;
+  }
+  header#cabeza1 {
+    grid-area: cabeza1;
+    background-image: linear-gradient(to right, black, rgb(9, 225, 45));}
+  
+  
+  nav#nav1 {
+    grid-area: nav1;
+    background-image: linear-gradient(to right, black, rgb(9, 225, 45));
+  }
+  
+  section#section2 {
+    grid-area: section2;
+    background-image: linear-gradient(to right, black, rgb(9, 225, 45));
+  }
+  
+  aside#aside1 {
+    grid-area: aside1;
+    background-image: linear-gradient(to right, black, rgb(9, 225, 45));
+  }
+  
+  footer#pata1 {
+    grid-area: pata1;
+    background-image: linear-gradient(to right, black, rgb(9, 225, 45));
+  }
